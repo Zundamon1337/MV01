@@ -25,12 +25,12 @@
 		return 300;
 	};
 	Window_TitleCommand.prototype.makeCommandList = function() {
-		this.addCommand("　ゲーム開始",   'newGame');
+		this.addCommand("　游戏开始",   'newGame');
 		var info = DataManager.loadSavefileInfo(1);
 		if (info) {
-			if (info["omake"]) this.addCommand("　おまけ画像",   'omake');
+			if (info["omake"]) this.addCommand("　附加图像",   'omake');
 		}
-		this.addCommand("　 設　定",   'options');
+		this.addCommand("　 设　定",   'options');
 	};
 	Scene_Title.prototype.createCommandWindow = function() {
 		this._commandWindow = new Window_TitleCommand();
@@ -177,7 +177,7 @@
 	    this.contents.clear();
 		if ($gameSwitches.value(1)) {
 			this.drawText(" 死者  " + $gameVariables._data[1] + " 人", 0, 0);
-			this.drawText("負傷者 " + $gameVariables._data[2] + " 人", 200, 0);
+			this.drawText("负伤者 " + $gameVariables._data[2] + " 人", 200, 0);
 		}
 	};
 	
@@ -304,7 +304,7 @@
 		record.bitmap = new Bitmap(500, 100);
 		var best = info["best"];
 		var total = info["total"];
-		record.bitmap.drawText("最高記録　" + best + "　人　" + "殺害合計　" + total + "　人", 0, 0, record.width, record.height, "left");
+		record.bitmap.drawText("最高记录　" + best + "　人　" + "杀害总计　" + total + "　人", 0, 0, record.width, record.height, "left");
 		record.x = 10;
 		record.y = 530;
 	}
@@ -330,6 +330,7 @@
 		this.addChild(version);
 		version.bitmap = new Bitmap(300, 100);
 		version.bitmap.drawText("Ver 1.0 Created by エリック", 0, 0, version.width, version.height, "left");
+		version.bitmap.drawText("汉化 bilibili@豆打もん", 0, -30, version.width, version.height, "left");
 		version.x = 500;
 		version.y = 530;
 	}

@@ -1,4 +1,20 @@
 [
-null,
-{"id":1,"battlerName":"","characterIndex":0,"characterName":"player","classId":1,"equips":[0,0,2,3,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"東城優美","nickname":"スプリーキラー","note":"","profile":""}
+  null,
+  {
+    "id": 1,
+    "battlerName": "",
+    "characterIndex": 0,
+    "characterName": "player",
+    "classId": 1,
+    "equips": [0, 0, 2, 3, 0],
+    "faceIndex": 0,
+    "faceName": "",
+    "traits": [],
+    "initialLevel": 1,
+    "maxLevel": 99,
+    "name": "东城优美",
+    "nickname": "连环杀手",
+    "note": "",
+    "profile": ""
+  }
 ]
