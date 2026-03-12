@@ -30,7 +30,7 @@
 		if (info) {
 			if (info["omake"]) this.addCommand("　附加图像",   'omake');
 		}
-		this.addCommand("　 设　定",   'options');
+		this.addCommand("　 设　置",   'options');
 	};
 	Scene_Title.prototype.createCommandWindow = function() {
 		this._commandWindow = new Window_TitleCommand();
